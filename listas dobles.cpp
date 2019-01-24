@@ -112,6 +112,7 @@ void InsertarAnterior (Nodo **cab, Nodo **ult, Nodo **pvte, int valor){
 			p -> ant = aux -> ant;
 			p -> sig = aux;
 			aux -> ant = p;
+			aux -> ant -> sig = p;
 			cout << "Valor insertado correctamente" << endl;
 		}
 	}
@@ -142,6 +143,7 @@ void InsertarFrente (Nodo **cab, Nodo **ult, Nodo **pvte, int valor){
 			p -> sig = aux -> sig;
 			p -> ant = aux;
 			aux -> sig = p;
+			aux -> sig -> ant = p;
 			cout << "Valor insertado correctamente" << endl;
 		}
 	}
