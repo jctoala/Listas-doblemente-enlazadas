@@ -142,8 +142,8 @@ void InsertarFrente (Nodo **cab, Nodo **ult, Nodo **pvte, int valor){
 			aux = *pvte;
 			p -> sig = aux -> sig;
 			p -> ant = aux;
-			aux -> sig = p;
 			aux -> sig -> ant = p;
+			aux -> sig = p;
 			cout << "Valor insertado correctamente" << endl;
 		}
 	}
